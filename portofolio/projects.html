@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | KONÉ ZIÉ KALIL</title>
+    <meta name="description" content="Découvrez les projets réalisés par KONÉ ZIÉ KALIL, étudiant en Système Informatique et Logiciel.">
+    
+    <!-- Styles et scripts identiques à index.html -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (identique à index.html) -->
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                <span class="logo-text">KZK</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="projects.html" class="nav-link active" aria-current="page">Projets</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Basculer entre mode clair et sombre">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero" aria-labelledby="projects-hero-title">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 id="projects-hero-title" class="projects-hero-title">Mes projets</h1>
+                <p class="projects-hero-subtitle">
+                    Découvrez une sélection de mes réalisations en développement web et logiciel
+                </p>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+            <div id="mini-blog" class="project-detail">
+                <div class="project-detail-header">
+                    <div class="project-detail-badge">
+                        <span class="badge">Front-end</span>
+                        <span class="badge">Web</span>
+                    </div>
+                    <h2 class="project-detail-title">Mini Blog</h2>
+                    <div class="project-detail-links">
+                        <a href="https://github.com/Hexandroid/Mon-Portofolio-Kon-Zi-Kalil" class="project-link-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>Voir sur GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-blog"></i>
+                            <span>Mini Blog - Projet Front-end</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-info">
+                        <h3>Description du projet</h3>
+                        <p>
+                            Mini blog personnel développé avec HTML, CSS et JavaScript. L'application permet de 
+                            publier des articles, de les catégoriser et d'ajouter des commentaires.
+                        </p>
+                        
+                        <h3>Fonctionnalités principales</h3>
+                        <ul class="project-features">
+                            <li>Interface utilisateur responsive et moderne</li>
+                            <li>Système d'articles avec catégories</li>
+                            <li>Formulaire de commentaires</li>
+                            <li>Navigation intuitive entre les articles</li>
+                            <li>Design adapté à tous les écrans</li>
+                        </ul>
+                        
+                        <h3>Technologies utilisées</h3>
+                        <div class="project-tech-stack">
+                            <span class="tech-stack-item">HTML5</span>
+                            <span class="tech-stack-item">CSS3</span>
+                            <span class="tech-stack-item">JavaScript</span>
+                            <span class="tech-stack-item">Responsive Design</span>
+                        </div>
+                        
+                        <div class="project-note">
+                            <p>
+                                <strong>Note :</strong> Le code source de ce projet est disponible sur GitHub. 
+                                Il ne fait pas partie intégrante de ce portfolio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="cv-canadien" class="project-detail">
+                <div class="project-detail-header">
+                    <div class="project-detail-badge">
+                        <span class="badge">Design</span>
+                        <span class="badge">Web</span>
+                    </div>
+                    <h2 class="project-detail-title">CV Canadien Stylisé</h2>
+                    <div class="project-detail-links">
+                        <a href="https://github.com/Hexandroid/Mon-Portofolio-Kon-Zi-Kalil" class="project-link-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>Voir sur GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <span>CV Canadien - Design Responsive</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-info">
+                        <h3>Description du projet</h3>
+                        <p>
+                            CV au format canadien avec un design moderne, élégant et entièrement responsive. 
+                            Le projet met en valeur les compétences et expériences professionnelles selon les standards canadiens.
+                        </p>
+                        
+                        <h3>Fonctionnalités principales</h3>
+                        <ul class="project-features">
+                            <li>Format canadien standardisé</li>
+                            <li>Design moderne et professionnel</li>
+                            <li>Compatible avec tous les écrans</li>
+                            <li>Section pour compétences techniques</li>
+                            <li>Version imprimable optimisée</li>
+                        </ul>
+                        
+                        <h3>Technologies utilisées</h3>
+                        <div class="project-tech-stack">
+                            <span class="tech-stack-item">HTML5</span>
+                            <span class="tech-stack-item">CSS3</span>
+                            <span class="tech-stack-item">Responsive Design</span>
+                            <span class="tech-stack-item">UI/UX Design</span>
+                        </div>
+                        
+                        <div class="project-note">
+                            <p>
+                                <strong>Note :</strong> Le code source de ce projet est disponible sur GitHub. 
+                                Il ne fait pas partie intégrante de ce portfolio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="e-sante" class="project-detail">
+                <div class="project-detail-header">
+                    <div class="project-detail-badge">
+                        <span class="badge">Application</span>
+                        <span class="badge">Java</span>
+                    </div>
+                    <h2 class="project-detail-title">Projet e_santé_ci</h2>
+                    <div class="project-detail-links">
+                        <a href="https://github.com/Hexandroid/Mon-Portofolio-Kon-Zi-Kalil" class="project-link-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>Voir sur GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>e_santé_ci - Application Santé</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-info">
+                        <h3>Description du projet</h3>
+                        <p>
+                            Application web de gestion de services de santé développée dans le cadre de ma formation. 
+                            Le projet comprend une interface administrateur et utilisateur avec gestion des données médicales.
+                        </p>
+                        
+                        <h3>Fonctionnalités principales</h3>
+                        <ul class="project-features">
+                            <li>Gestion des patients et des rendez-vous</li>
+                            <li>Interface administrateur complète</li>
+                            <li>Base de données pour le stockage des informations</li>
+                            <li>Système d'authentification sécurisé</li>
+                            <li>Rapports et statistiques</li>
+                        </ul>
+                        
+                        <h3>Technologies utilisées</h3>
+                        <div class="project-tech-stack">
+                            <span class="tech-stack-item">Java</span>
+                            <span class="tech-stack-item">Base de données</span>
+                            <span class="tech-stack-item">UI/UX Design</span>
+                            <span class="tech-stack-item">Architecture MVC</span>
+                        </div>
+                        
+                        <div class="project-note">
+                            <p>
+                                <strong>Note :</strong> Ce projet a été réalisé dans le cadre de ma formation. 
+                                Le code source n'est pas intégré dans ce portfolio mais est disponible sur GitHub.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet fictif optionnel -->
+            <div class="project-detail">
+                <div class="project-detail-header">
+                    <div class="project-detail-badge">
+                        <span class="badge">Web</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                    <h2 class="project-detail-title">Task Manager App</h2>
+                    <div class="project-detail-links">
+                        <a href="#" class="project-link-btn disabled">
+                            <i class="fas fa-code"></i>
+                            <span>Projet en développement</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-tasks"></i>
+                            <span>Task Manager - Application de gestion</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-info">
+                        <h3>Description du projet</h3>
+                        <p>
+                            Application web de gestion de tâches avec interface utilisateur intuitive. 
+                            Permet de créer, organiser et suivre l'avancement des tâches quotidiennes.
+                        </p>
+                        
+                        <h3>Fonctionnalités principales</h3>
+                        <ul class="project-features">
+                            <li>Création et gestion de listes de tâches</li>
+                            <li>Catégorisation et priorisation des tâches</li>
+                            <li>Interface drag & drop intuitive</li>
+                            <li>Stockage local des données</li>
+                            <li>Design moderne et responsive</li>
+                        </ul>
+                        
+                        <h3>Technologies utilisées</h3>
+                        <div class="project-tech-stack">
+                            <span class="tech-stack-item">HTML5</span>
+                            <span class="tech-stack-item">CSS3</span>
+                            <span class="tech-stack-item">JavaScript</span>
+                            <span class="tech-stack-item">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="section github-section" aria-labelledby="github-title">
+        <div class="container">
+            <div class="github-content">
+                <div class="github-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h2 id="github-title" class="github-title">Voir tous mes projets sur GitHub</h2>
+                <p class="github-text">
+                    Tous les projets présentés, ainsi que d'autres travaux, sont disponibles sur mon compte GitHub. 
+                    N'hésitez pas à explorer le code source et à me contacter si vous avez des questions.
+                </p>
+                <a href="https://github.com/Hexandroid/Mon-Portofolio-Kon-Zi-Kalil" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <span>Visiter mon GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à index.html) -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                        <span class="logo-text">KZK</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Étudiant en Système Informatique et Logiciel<br>
+                        Passionné par l'innovation technologique
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link">Accueil</a></li>
+                            <li><a href="about.html" class="footer-link">À propos</a></li>
+                            <li><a href="projects.html" class="footer-link">Projets</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Ressources</h4>
+                        <ul class="footer-list">
+                            <li><a href="assets/documents/cv-kone-zie-kalil.pdf" class="footer-link" download>Télécharger mon CV</a></li>
+                            <li><a href="https://github.com/Hexandroid" class="footer-link" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>kalilzie26@gmail.com</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+225 05 55 50 84 38</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bingerville, Côte d'Ivoire</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 KONÉ ZIÉ KALIL. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Hexandroid" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:kalilzie26@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/projects-filter.js" defer></script>
+</body>
+</html>

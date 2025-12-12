@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KONÉ ZIÉ KALIL</title>
+    <meta name="description" content="Contactez KONÉ ZIÉ KALIL, étudiant en Système Informatique et Logiciel, pour discuter de projets ou d'opportunités.">
+    
+    <!-- Styles et scripts identiques à index.html -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (identique à index.html) -->
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                <span class="logo-text">KZK</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="projects.html" class="nav-link">Projets</a>
+                <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Basculer entre mode clair et sombre">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" aria-labelledby="contact-hero-title">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 id="contact-hero-title" class="contact-hero-title">Contactez-moi</h1>
+                <p class="contact-hero-subtitle">
+                    Discutons de vos projets, opportunités ou collaborations potentielles
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 id="contact-title" class="section-title">Informations de contact</h2>
+                    <p class="contact-description">
+                        Je suis ouvert aux opportunités de stage, d'alternance ou de collaboration 
+                        sur des projets innovants. N'hésitez pas à me contacter par email, téléphone 
+                        ou via les réseaux sociaux.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-item-title">Email</h3>
+                                <a href="mailto:kalilzie26@gmail.com" class="contact-link">kalilzie26@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-item-title">Téléphone</h3>
+                                <a href="tel:+2250555508438" class="contact-link">+225 05 55 50 84 38</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-item-title">Localisation</h3>
+                                <p class="contact-text">Bingerville, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-item-title">Formation</h3>
+                                <p class="contact-text">Système Informatique et Logiciel</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3 class="social-title">Réseaux sociaux</h3>
+                        <div class="social-buttons">
+                            <a href="https://github.com/Hexandroid" class="social-btn github" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="social-btn linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2 class="section-title">Envoyez un message</h2>
+                    <p class="form-description">
+                        Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.
+                    </p>
+                    
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom complet *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Adresse email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Sujet *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <div class="error-message" id="subjectError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span id="submitText">Envoyer le message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="form-success" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section" aria-label="Localisation">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-header">
+                    <h2 class="section-title">Localisation</h2>
+                    <p class="section-subtitle">Bingerville, Côte d'Ivoire</p>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-visual">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Côte d'Ivoire, Bingerville</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à index.html) -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                        <span class="logo-text">KZK</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Étudiant en Système Informatique et Logiciel<br>
+                        Passionné par l'innovation technologique
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link">Accueil</a></li>
+                            <li><a href="about.html" class="footer-link">À propos</a></li>
+                            <li><a href="projects.html" class="footer-link">Projets</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Ressources</h4>
+                        <ul class="footer-list">
+                            <li><a href="assets/documents/cv-kone-zie-kalil.pdf" class="footer-link" download>Télécharger mon CV</a></li>
+                            <li><a href="https://github.com/Hexandroid" class="footer-link" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>kalilzie26@gmail.com</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+225 05 55 50 84 38</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bingerville, Côte d'Ivoire</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 KONÉ ZIÉ KALIL. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Hexandroid" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:kalilzie26@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/form-validation.js" defer></script>
+</body>
+</html>

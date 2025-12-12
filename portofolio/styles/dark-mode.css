@@ -1,0 +1,49 @@
+/* Dark Theme Variables */
+body.dark-mode {
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-card: #1f2937;
+    --border-color: #374151;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    --glass-bg: rgba(31, 41, 55, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar {
+    background-color: var(--bg-primary);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .theme-toggle i::before {
+    content: "\f185"; /* Sun icon */
+}
+
+body.dark-mode .footer {
+    background-color: var(--bg-primary);
+}
+
+body.dark-mode .social-link {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+
+body.dark-mode .form-input,
+body.dark-mode .form-textarea {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .form-input:focus,
+body.dark-mode .form-textarea:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}

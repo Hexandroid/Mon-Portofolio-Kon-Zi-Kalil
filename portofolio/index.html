@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de KONÉ ZIÉ KALIL, étudiant en Système Informatique et Logiciel. Développeur passionné avec expérience en développement web et informatique.">
+    <meta name="keywords" content="développeur, portfolio, informatique, logiciel, Côte d'Ivoire, HTML, CSS, JavaScript, Java">
+    <meta name="author" content="KONÉ ZIÉ KALIL">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="KONÉ ZIÉ KALIL - Portfolio Développeur">
+    <meta property="og:description" content="Étudiant en Système Informatique et Logiciel, passionné par le développement et l'innovation technologique.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hexandroid.github.io/Mon-Portofolio-Kon-Zi-Kalil">
+    <meta property="og:image" content="https://hexandroid.github.io/Mon-Portofolio-Kon-Zi-Kalil/assets/images/og-image.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KONÉ ZIÉ KALIL - Portfolio Développeur">
+    <meta name="twitter:description" content="Étudiant en Système Informatique et Logiciel, passionné par le développement et l'innovation technologique.">
+    
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "KONÉ ZIÉ KALIL",
+        "jobTitle": "Étudiant en Système Informatique et Logiciel",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bingerville",
+            "addressCountry": "Côte d'Ivoire"
+        },
+        "email": "kalilzie26@gmail.com",
+        "telephone": "+2250555508438",
+        "url": "https://hexandroid.github.io/Mon-Portofolio-Kon-Zi-Kalil",
+        "sameAs": [
+            "https://www.linkedin.com/in/zié-kalil-koné-2289073a0/",
+            "https://github.com/Hexandroid"
+        ]
+    }
+    </script>
+    
+    <title>KONÉ ZIÉ KALIL | Portfolio Développeur</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                <span class="logo-text">KZK</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="projects.html" class="nav-link">Projets</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Basculer entre mode clair et sombre">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="particles-container" id="particles"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Étudiant en Informatique</span>
+                </div>
+                <h1 id="hero-title" class="hero-title">
+                    <span class="title-line">Je suis <span class="text-gradient">KONÉ ZIÉ KALIL</span></span>
+                    <span class="title-line typing-container">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor"></span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    Passionné par le développement logiciel, les systèmes informatiques et l'innovation technologique. 
+                    Je transforme des idées en solutions numériques efficaces.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <span>Me contacter</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bingerville, Côte d'Ivoire</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Système Informatique et Logiciel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-java"></i>
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-label">Stage CIE</span>
+                            <span class="exp-duration">2 mois</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blob-animation">
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
+                    <div class="blob blob-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <a href="#highlights" class="scroll-indicator" aria-label="Faire défiler vers le bas">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section highlights" aria-labelledby="highlights-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="highlights-title" class="section-title">Points forts</h2>
+                <p class="section-subtitle">Compétences clés et domaines d'expertise</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="highlight-title">Développement Web</h3>
+                    <p class="highlight-description">
+                        Création d'interfaces modernes et responsives avec HTML, CSS et JavaScript. 
+                        Expérience en développement front-end avec une attention particulière aux performances.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="highlight-title">Ingénierie Logicielle</h3>
+                    <p class="highlight-description">
+                        Conception et développement d'applications logicielles avec Java. 
+                        Approche structurée et méthodique pour des solutions robustes et maintenables.
+                    </p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="highlight-title">Réflexion Structurée</h3>
+                    <p class="highlight-description">
+                        Maîtrise des 6 chapeaux de De Bono, pensée latérale et analyse critique. 
+                        Capacité à aborder les problèmes sous différents angles pour des solutions innovantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="section projects-preview" aria-labelledby="projects-preview-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="projects-preview-title" class="section-title">Projets Récents</h2>
+                <p class="section-subtitle">Découvrez quelques-unes de mes réalisations</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <span class="badge">Front-end</span>
+                        </div>
+                        <h3 class="project-title">Mini Blog</h3>
+                    </div>
+                    <p class="project-description">
+                        Blog personnel développé avec HTML, CSS et JavaScript. Interface intuitive avec système d'articles et de commentaires.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="projects.html#mini-blog" class="project-link" aria-label="Voir le projet Mini Blog">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <span class="badge">Design</span>
+                        </div>
+                        <h3 class="project-title">CV Canadien Stylisé</h3>
+                    </div>
+                    <p class="project-description">
+                        CV au format canadien avec design moderne et responsive. Mise en valeur des compétences et expériences professionnelles.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Design</span>
+                    </div>
+                    <a href="projects.html#cv-canadien" class="project-link" aria-label="Voir le projet CV Canadien">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <span class="badge">Application</span>
+                        </div>
+                        <h3 class="project-title">Projet e_santé_ci</h3>
+                    </div>
+                    <p class="project-description">
+                        Application web pour la gestion de services de santé. Interface administrateur et utilisateur avec base de données.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Base de données</span>
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
+                    <a href="projects.html#e-sante" class="project-link" aria-label="Voir le projet e_santé_ci">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="projects.html" class="btn btn-secondary">
+                    <span>Tous mes projets</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" aria-labelledby="cta-title">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2 id="cta-title" class="cta-title">Intéressé par mon profil ?</h2>
+                <p class="cta-text">
+                    Je suis ouvert aux opportunités de stage, d'alternance ou de collaboration sur des projets innovants. 
+                    N'hésitez pas à me contacter pour discuter de votre projet.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Me contacter</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="assets/documents/cv-kone-zie-kalil.pdf" class="btn btn-outline" download="CV_KONE_ZIE_KALIL.pdf">
+                        <span>Télécharger mon CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <div class="animated-gears">
+                    <i class="fas fa-cog cog-1"></i>
+                    <i class="fas fa-cog cog-2"></i>
+                    <i class="fas fa-cog cog-3"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="Accueil - KONÉ ZIÉ KALIL">
+                        <span class="logo-text">KZK</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Étudiant en Système Informatique et Logiciel<br>
+                        Passionné par l'innovation technologique
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link">Accueil</a></li>
+                            <li><a href="about.html" class="footer-link">À propos</a></li>
+                            <li><a href="projects.html" class="footer-link">Projets</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Ressources</h4>
+                        <ul class="footer-list">
+                            <li><a href="assets/documents/cv-kone-zie-kalil.pdf" class="footer-link" download>Télécharger mon CV</a></li>
+                            <li><a href="https://github.com/Hexandroid" class="footer-link" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>kalilzie26@gmail.com</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+225 05 55 50 84 38</span>
+                            </li>
+                            <li class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bingerville, Côte d'Ivoire</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 KONÉ ZIÉ KALIL. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Hexandroid" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zié-kalil-koné-2289073a0/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:kalilzie26@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/particles.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+</body>
+</html>
