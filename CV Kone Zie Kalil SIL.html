@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - KONE Zié Aboubackr Kalil</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #2c5282;
+            --light: #f7fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .cv {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        section {
+            padding: 25px 40px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        section:last-child {
+            border: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 60px;
+            height: 2px;
+            background: var(--secondary);
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: var(--light);
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .experience,
+        .education {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .item-date {
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .cert {
+            background: var(--light);
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .langs {
+            display: flex;
+            gap: 20px;
+        }
+
+        .lang {
+            flex: 1;
+            background: var(--light);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--light);
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .cv {
+                border-radius: 8px;
+            }
+
+            header,
+            section {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .skills-grid,
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .langs {
+                flex-direction: column;
+            }
+
+            .item-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv">
+        <header>
+            <h1>KONE Zié Aboubackr Kalil</h1>
+            <div class="title">Étudiant en Système Informatique et Logiciel</div>
+            <div class="contact">
+                <span>📍 Abidjan, Bingerville</span>
+                <span>📧 kone.kalil@email.com</span>
+                <span>📱 +225 XX XX XX XX</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Résumé Professionnel</h2>
+            <p>Passionné par les nouvelles technologies et l'informatique depuis toujours, je recherche une première
+                expérience professionnelle pour découvrir concrètement le monde du travail et développer mes compétences
+                en Système Informatique et Logiciel.</p>
+        </section>
+
+        <section>
+            <h2>Compétences Clés</h2>
+            <div class="skills-grid">
+                <div class="skill">💻 Développement web</div>
+                <div class="skill">🗄️ Base de données</div>
+                <div class="skill">🧮 Algorithmique</div>
+                <div class="skill">🛠️ C, C++, Python, LaTeX</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Expérience Professionnelle</h2>
+            <div class="experience">
+                <div class="item-header">
+                    <div class="item-title">Assistant Informatique</div>
+                    <div class="item-date">2024 - Présent</div>
+                </div>
+                <div>Agence CIE de Bingerville</div>
+                <ul>
+                    <li>Assistance au premier niveau sur matériel informatique</li>
+                    <li>Installation de logiciels et systèmes d'exploitation</li>
+                    <li>Maintenance préventive et dépannage technique</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <div class="education">
+                <div class="item-header">
+                    <div class="item-title">Licence 2 en Système Informatique et Logiciel</div>
+                    <div class="item-date">2025</div>
+                </div>
+                <div>CERAP / Université Jésuite d'Abidjan</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificats</h2>
+            <div class="cert-grid">
+                <div class="cert"><strong>ICDL Computer & Online Essential</strong><br>Septembre 2024</div>
+                <div class="cert"><strong>ICDL Computer Application Essential</strong><br>Janvier 2025</div>
+                <div class="cert"><strong>ICDL Documentation (Word)</strong><br>Janvier 2025</div>
+                <div class="cert"><strong>ICDL Spreadsheets (Excel)</strong><br>Février 2025</div>
+                <div class="cert"><strong>ICDL Presentations (PowerPoint)</strong><br>Février 2025</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Langues</h2>
+            <div class="langs">
+                <div class="lang"><strong>Français</strong><br>Langue maternelle</div>
+                <div class="lang"><strong>Anglais</strong><br>Niveau intermédiaire</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>CV mis à jour en Mars 2025 | Disponible pour opportunités professionnelles</p>
+        </footer>
+    </div>
+</body>
+
+</html>
